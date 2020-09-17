@@ -1,0 +1,53 @@
+{
+    "products": [
+        {
+            "_id": "dress1",
+            "image": "/images/dress1.jpg",
+            "title": "Midi sundress with shining details",
+            "description": "This dress is perfect for summer",
+            "availableSizes": ["XS","S","M","L","XL"],
+            "price": 24.99
+        },
+        {
+            "_id": "dress2",
+            "image": "/images/dress2.jpg",
+            "title": "Midi sundress with shining details",
+            "description": "This dress is perfect for summer",
+            "availableSizes": ["S","M","L","XL"],
+            "price": 17.99
+        },
+        {
+            "_id": "dress3",
+            "image": "/images/dress3.jpg",
+            "title": "Midi sundress with shining details",
+            "description": "This dress is perfect for summer",
+            "availableSizes": ["XS","S","M","L","XL","XXL"],
+            "price": 32.49
+        },
+        {
+            "_id": "dress4",
+            "image": "/images/dress4.jpg",
+            "title": "Midi sundress with shining details",
+            "description": "This dress is perfect for summer",
+            "availableSizes": ["XS","S","M","L","XL"],
+            "price": 24.99
+        },
+        {
+            "_id": "dress5",
+            "image": "/images/dress5.jpg",
+            "title": "Midi sundress with shining details",
+            "description": "This dress is perfect for summer",
+            "availableSizes": ["XS","S","M","L","XL"],
+            "price": 17.99
+        },
+        {
+            "_id": "dress6",
+            "image": "/images/dress6.jpg",
+            "title": "Midi sundress with shining details",
+            "description": "This dress is perfect for summer",
+            "availableSizes": ["XS","S","M","L","XL"],
+            "price": 17.99
+        }
+    
+    ]
+}
