@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
+## Redux
 In the project directory, you can run:
+![Redux Flow](https://miro.medium.com/max/1600/0*ivEtU668kM5UEPG-.)
 
 ### `yarn start`
 
