@@ -5,7 +5,7 @@ import {
 } from "../types";
 
 export const fetchProducts = () => async (dispatch) => {
-  const res = await fetch("/api/products");
+  const res = await fetch("https://shop-backend-redux.herokuapp.com/api/products");
 
   const data = await res.json();
 

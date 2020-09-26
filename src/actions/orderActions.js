@@ -1,31 +1,32 @@
-import { CLEAR_CART, CLEAR_ORDER, CREATE_ORDER, FETCH_ORDERS } from "../types"
+import { CLEAR_CART, CLEAR_ORDER, CREATE_ORDER, FETCH_ORDERS } from "../types";
 
-export const createOrder = (order) => (dispatch)=> {
-    fetch("/api/orders", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(order),
-    })
+export const createOrder = (order) => (dispatch) => {
+  fetch("https://shop-backend-redux.herokuapp.com/api/orders", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(order),
+  })
     .then((res) => res.json())
     .then((data) => {
-        dispatch({
-            type: CREATE_ORDER, payload: data
-        });
-        localStorage.clear("cartItems");
-        dispatch({type: CLEAR_CART});
+      dispatch({
+        type: CREATE_ORDER,
+        payload: data,
+      });
     });
 };
 
 export const clearOrder = () => (dispatch) => {
-    dispatch({ type: CLEAR_ORDER });
-  };
+  dispatch({ type: CLEAR_ORDER });
+  localStorage.clear("cartItems");
+  dispatch({ type: CLEAR_CART });
+};
 
-  export const fetchOrders = () => (dispatch) => {
-    fetch("/api/orders")
-      .then((res) => res.json())
-      .then((data) => {
-        dispatch({ type: FETCH_ORDERS, payload: data });
-      });
-  };
+export const fetchOrders = () => (dispatch) => {
+  fetch("https://shop-backend-redux.herokuapp.com/api/orders")
+    .then((res) => res.json())
+    .then((data) => {
+      dispatch({ type: FETCH_ORDERS, payload: data });
+    });
+};

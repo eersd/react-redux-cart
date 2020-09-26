@@ -49,6 +49,8 @@ class Cart extends Component {
         )}
 
         {console.log("orders", order)}
+        {console.log("cartItems", cartItems)}
+        {console.log("localStorage", localStorage.getItem("cartItems"))}
 
         {order && (
           <Modal isOpen={true} onRequestClose={this.closeModal} ariaHideApp={false}>
