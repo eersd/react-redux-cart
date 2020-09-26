@@ -1,8 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is mainly to learn about Redux in React. 
 
 ## Redux
-In the project directory, you can run:
+Generally, the image below describes how redux works.
 ![Redux Flow](https://miro.medium.com/max/1600/0*ivEtU668kM5UEPG-.)
+
 
 ### `yarn start`
 
