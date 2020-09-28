@@ -14,4 +14,12 @@ To run the frontend locally:
 Generally, the image below describes how redux works. An action is triggered from View e.g. through a Button, then Action dispatches a type and payload. The reducer then updates the state / store based on the content of the dispatch.
 ![Redux Flow](https://miro.medium.com/max/1600/0*ivEtU668kM5UEPG-.)
 
+## General Functionality
+
+- Add Products to Cart
+- Proceed to Checkout 
+- Enter Information and Address
+- After Buying the summary of an Order will be listed
+- To see all orders processed, go to the top right corner in the Admin section
+
 
